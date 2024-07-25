@@ -1,0 +1,66 @@
+.personality-form {
+    border-radius: 10px;
+    padding: 30px;
+    font-family: 'Pangolin', cursive;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .personality-form h3 {
+    color: #d32f1f;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .personality-form ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .personality-form li {
+    margin-bottom: 15px;
+  }
+  
+  .option-button {
+    background-color: #ffffff;
+    border: 2px solid #d32f1f;
+    border-radius: 5px;
+    color: #d32f1f;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px 20px;
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%;
+  }
+  
+  .option-button:hover {
+    background-color: #d32f1f;
+    color: #ffffff;
+  }
+  
+  .option-button.selected {
+    background-color: #d32f1f;
+    color: #ffffff;
+  }
+  
+  .next-button {
+    background-color: #f25a42;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px auto 0;
+    padding: 15px 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+  }
+  
+  .next-button:hover {
+    background-color: #d32f1f;
+  }

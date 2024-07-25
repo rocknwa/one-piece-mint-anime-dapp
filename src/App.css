@@ -1,38 +1,153 @@
+@font-face {
+  font-family: 'OnePiece'; /*a name to be used later*/
+  src: url(../public/font.ttf); /*URL to font*/
+}
+
+body {
+  background-image: url(./assets/background_image1.jpeg) ;
+  background-position: center;
+  background-size: stretch;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Add font family for consistency */
+  color: #fff; /* Set default text color to white */
+}
+
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  position: relative;
+  z-index: 1;
+  min-height: 100%;
+}
+
+.top-right-buttons {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.top-right-buttons button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f25a42;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.top-right-buttons button:hover {
+  background-color: #d32f1f;
+}
+
+.start-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 8px;
   text-align: center;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  width: 20%; /* Adjust the width of the logo as needed */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.start-text {
+  color: #050505;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'OnePiece';
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.start-button, .submit-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f25a42;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover, .submit-button:hover {
+  background-color: #d32f1f;
+}
+.reveal-personality {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+
+}
+.reveal-button {
+  background-color: #f25a42;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  position: fixed;
+  top: 40%;
+  right: 40%;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px auto 0;
+  padding: 15px 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.reveal-button:hover {
+  background-color: #d32f1f;
+}
+
+.character-image-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #d32f1f;
+  margin-bottom: 20px;
+}
+
+.character-image {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.character-name {
+  font-family: 'Pangolin', cursive;
+  font-size: 32px;
+  color: #d32f1f;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+.character-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #f4e9d8;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
