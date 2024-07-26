@@ -1,6 +1,6 @@
 import React, { useEffect, useState, createContext, useContext } from 'react';
 import Web3 from 'web3';
-import nftABI from '../contract/OnePieceMint.json'
+import nftABI from '../contract/OnePieceMint.json';
 
 // Create a context for Web3
 const Web3Context = createContext();
@@ -23,34 +23,35 @@ export function ConnectWallet({ children }) {
 
   const nftContractAddress = process.env.REACT_APP_CONTRACT_ADDRESS;
 
-
   const connectWallet = async () => {
-      try {
-        await window.ethereum.request({ method: "eth_requestAccounts" });
-        const accounts = await web3.eth.getAccounts();
-        const account = accounts[0];
-        const currentChainId = await window.ethereum.request({
-          method: 'eth_chainId',
-        });
-        if (currentChainId !== '0x66eee') { // '0x66eee' is the chain ID for Arbitrum Sepolia Testnet
-          alert("Connect to Arbitrum Sepolia Testnet");
-          return;
-        }
-        const instance = new web3.eth.Contract(nftABI.abi, nftContractAddress);
-        setNftcontract(instance);
-        console.log(account);
-        setAccount(account);
-        setConnected(true);
-      } catch (error) {
-        console.error(error);
+    try {
+      await window.ethereum.request({ method: "eth_requestAccounts" });
+      const accounts = await web3.eth.getAccounts();
+      const account = accounts[0];
+      const currentChainId = await window.ethereum.request({
+        method: 'eth_chainId',
+      });
+      if (currentChainId !== '0x45b') { // Ensure this matches the Core testnet chain ID
+        alert("Connect to core testnet");
+        return;
       }
+      const instance = new web3.eth.Contract(nftABI.abi, nftContractAddress);
+      setNftcontract(instance);
+      console.log(account);
+      setAccount(account);
+      setConnected(true);
+    } catch (error) {
+      console.error("Error connecting wallet:", error);
     }
+  };
 
   const disconnectWallet = () => {
     setAccount(null);
     setConnected(false);
     setNftcontract(null);
   };
+
+  
 
   return (
     <Web3Context.Provider value={{ web3, account, disconnectWallet, connectWallet, connected, nftcontract }}>

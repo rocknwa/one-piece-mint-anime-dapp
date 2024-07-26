@@ -1,8 +1,8 @@
 {
-  "mainnet": {
+  "core": {
     "OnePieceMint": {
-      "address": "0x4d45F8158e252FD8e026cD594a4ec70dCD712562",
-      "startBlock": 21745192
+      "address": "0xa193a1597d630bf6f39dcf6505f809c645FF5D8a",
+      "startBlock": 21633897
     }
   }
 }

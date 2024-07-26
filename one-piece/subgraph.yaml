@@ -1,4 +1,4 @@
-specVersion: 1.0.0
+specVersion: 0.0.4
 indexerHints:
   prune: auto
 schema:
@@ -8,9 +8,9 @@ dataSources:
     name: OnePieceMint
     network: mainnet
     source:
-      address: "0x4d45F8158e252FD8e026cD594a4ec70dCD712562"
+      address: "0xa193a1597d630bf6f39dcf6505f809c645FF5D8a"
       abi: OnePieceMint
-      startBlock: 21745192
+      startBlock: 21633897
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
