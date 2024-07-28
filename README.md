@@ -1,4 +1,4 @@
-Sure, here's an updated README with the new frontend features included:
+
 
 ---
 
