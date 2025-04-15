@@ -45,24 +45,4 @@ We're excited to present the One Piece Personality dApp, a blockchain-based proj
 ## Join the Adventure!
 Participate in our project and discover your One Piece personality match. Mint your unique NFT and become a part of this exciting blockchain experience!
 
-## Core BTCFi Hackathon Submission
-We’re proud to submit the One Piece Personality dApp for the Core BTCFi Hackathon. Our project showcases the potential of blockchain technology in creating engaging and interactive experiences for fans worldwide. Here are the key points that align our project with the hackathon's criteria:
-
-### Innovation:
-- **Unique Concept**: Combining the popular One Piece anime with blockchain technology to create a personality-matching dApp.
-- **Blockchain Integration**: Leveraging Core Blockchain's unique features like the Satoshi Plus consensus mechanism to enhance user experience and ensure low transaction fees.
-
-### Technical Prowess:
-- **Smart Contract**: Implemented using Solidity, ensuring robust and secure interactions.
-- **Randomness**: Utilizing advanced cryptographic techniques (Keccak hashing and block.prevrandao) for fair and transparent random character assignment.
-
-### User Engagement:
-- **NFT Minting**: Users receive unique NFTs representing their One Piece personality match, fostering a sense of ownership and community.
-- **Community Features**: Encouraging users to engage with fellow One Piece fans and participate in the broader blockchain community.
-
-### Contribution to Core BTCFi Ecosystem:
-- **Utilizing Core Blockchain**: Showcasing the capabilities of Core Blockchain, including its efficiency and scalability.
-- **Expanding the Ecosystem**: Adding a new, engaging application to the Core BTCFi ecosystem, demonstrating the versatility of Core Blockchain in supporting diverse dApps.
-
----
-
+ 
