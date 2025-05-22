@@ -67,7 +67,7 @@ The dApp automatically prompts MetaMask to add or switch to the Core Testnet (Ch
   - Each user can mint only one NFT.
   - NFTs are non-transferable (soulbound) and tied to the wallet address.
 - **Repository:**  
-  [One Piece Personality dApp Smart Contract](https://github.com/rocknwa/one-piece-mint-contract)
+  [One Piece Personality dApp Smart Contract](https://github.com/rocknwa/web3-animation-Dapp)
 
 **Soulbound Mechanism:**  
 The smart contract enforces the soulbound property by restricting NFT transfers and limiting minting to one NFT per wallet address, ensuring the NFT remains a unique, personal collectible.
