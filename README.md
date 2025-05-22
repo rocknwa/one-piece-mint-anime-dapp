@@ -1,7 +1,3 @@
-
-
----
-
 # One Piece Personality dApp
 Discover Your One Piece Personality Match and Collect Unique NFTs!
 
@@ -34,5 +30,3 @@ We're excited to preOne Piece Personality dApp, a blockchain-based project that 
 
 ## Join the Adventure!
 Participate in our project and discover your One Piece personality match. Mint your unique NFT and become a part of this exciting blockchain experience!
-
- 
